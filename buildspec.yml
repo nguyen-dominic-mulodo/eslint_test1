@@ -36,3 +36,5 @@ phases:
       - xml-js src/checkstyle-result.xml --spaces 4 --out src/checkstyle-result.json
 artifacts:
   type: zip
+  files:
+    - src/**
