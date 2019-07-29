@@ -13,7 +13,7 @@ phases:
       # Upgrade AWS CLI to the latest version
       - pip3 install --upgrade awscli
       
-      - sudo apt-get install build-essential curl file git
+      - apt-get install build-essential curl file git
       - sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
       - brew install mongo
       
