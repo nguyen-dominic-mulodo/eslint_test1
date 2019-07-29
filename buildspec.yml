@@ -30,8 +30,6 @@ phases:
       # Install runtime dependencies
       - npm install --production
 
-      - aws cloudformation package --template template.yml --s3-bucket $S3_BUCKET --output-template-file template-export.yml
-
       - eslint -c .eslintrc.json -f checkstyle src/**.js -o src/checkstyle-result.xml || exit 0
       - xml-js src/checkstyle-result.xml --spaces 4 --out src/checkstyle-result.json
 artifacts:
