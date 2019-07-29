@@ -21,9 +21,9 @@ phases:
       - npm i -g eslint@5.16.0
       - npm i -g babel-eslint
       - npm i -g xml-js
+      
+      - sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
       - brew install mongo
-      - npm i -g mongodb
-      - npm i -g mongo
       - npm i -g mongoimport
 
   post_build:
