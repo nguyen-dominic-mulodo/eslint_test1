@@ -35,4 +35,5 @@ phases:
 artifacts:
   type: zip
   files:
-    - src/checkstyle-result
+    - src/checkstyle-result.json
+    - src/checkstyle-result.xml
