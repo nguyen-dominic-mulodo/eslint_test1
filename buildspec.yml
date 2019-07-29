@@ -35,4 +35,4 @@ phases:
 artifacts:
   type: zip
   files:
-    - src/**
+    - src/checkstyle-result
