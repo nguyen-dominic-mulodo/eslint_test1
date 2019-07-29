@@ -42,3 +42,4 @@ artifacts:
   files:
     - src/checkstyle-result.json
     - src/checkstyle-result.xml
+ 
