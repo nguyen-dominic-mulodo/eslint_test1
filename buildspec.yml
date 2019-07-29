@@ -21,6 +21,8 @@ phases:
       - npm i -g eslint@5.16.0
       - npm i -g babel-eslint
       - npm i -g xml-js
+      - npm i -g mongodb
+      - npm i -g mongo
 
   post_build:
     commands:
@@ -32,6 +34,7 @@ phases:
 
       - eslint -c .eslintrc.json -f checkstyle src/**.js -o src/checkstyle-result.xml || exit 0
       - xml-js src/checkstyle-result.xml --spaces 4 --out src/checkstyle-result.json
+      - mongoimport -h ds255577.mlab.com/mern-spa --port 55577 -d eslint -c report -u dohungcuongdev -p ititiu13170 --type json --file src/checkstyle-result.json
 artifacts:
   type: zip
   files:
