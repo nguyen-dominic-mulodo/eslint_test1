@@ -21,6 +21,7 @@ phases:
       - npm i -g eslint@5.16.0
       - npm i -g babel-eslint
       - npm i -g xml-js
+      - brew install mongo
       - npm i -g mongodb
       - npm i -g mongo
       - npm i -g mongoimport
