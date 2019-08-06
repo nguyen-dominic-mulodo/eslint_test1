@@ -21,7 +21,7 @@ class App extends Component {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p style={{color: "Black"}}>
-          A Nodejs Express.js server serving a production built Reactjs application.
+          A Nodejs Express.js server serving a production built Reactjs application.s
         </p>
         <p>
           {this.state.result}
